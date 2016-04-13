@@ -1,0 +1,237 @@
+/*********** HEADER ***********/
+
+header
+  height: 70px
+  position: fixed
+  width: 100%
+  left: 0
+  top: 0
+  z-index: 9999
+  +transition(all 0.3s ease)
+
+.bg
+  background-color: rgba(28,54,66,1)
+
+.dn
+  top: -70px
+  left: 0
+  +transition(all 0.3s ease)
+
+
+.header__menu
+  background: rgba(28,54,66,.97)
+  height: 100vh
+  left: 0
+  margin: 0
+  padding: 0
+  position: fixed
+  width: 100vw
+  z-index: 999
+  display: none
+
+.header__menu
+  ul
+    margin: 0
+    padding: 0
+    position: relative
+    top: 50%
+    margin-top: -71px
+
+.header__menu
+  ul
+    li 
+      margin-bottom: 20px
+      padding: 0
+      text-align: center
+
+
+.header__menu
+  ul 
+    li
+      a
+        +transition(all .3s ease)
+        color: #CFD8DC
+        font-size: 1.5em
+        font-weight: 300
+        text-decoration: none
+        letter-spacing: 1px
+
+/*------- MENU ACTIVE ------- */
+
+#about
+  .about
+    a
+      color: white
+      text-decoration: line-through
+#work
+  .workcito
+    a
+      color: white
+      text-decoration: underline
+
+#contact
+  .contact
+    a
+      color: white
+      text-decoration: line-through
+
+
+/****** SOLRAC LOGO ******/
+
+.logo__container
+  -webkit-perspective: 50px
+  -moz-perspective: 50px
+  perspective: 50px
+  width: 50px
+  position: relative
+  z-index: 99999
+  display: block
+  +transition(all .3s ease)
+  &:hover
+    +transform(scale(0.95)) 
+    #logoSolrac
+      opacity: .3
+
+  
+  #logoSolrac
+    width: 32px
+    margin-top: 5px
+    +animation(gira 20s ease infinite)
+    -webkit-transform-style: preserve-3d
+    -moz-transform-style: preserve-3d
+    transform-style: preserve-3d
+    +transition(all .3s ease)
+
+  @-webkit-keyframes gira
+    0%
+      -webkit-transform: rotateY(0deg)
+    10%
+      -webkit-transform: rotateY(360deg)
+    100%
+      -webkit-transform: rotateY(360deg)
+
+
+  @-moz-keyframes gira
+    0%
+      -moz-transform: rotateY(0deg)
+    10%
+      -moz-transform: rotateY(360deg)
+    100%
+      -moz-transform: rotateY(360deg)
+
+
+  @keyframes gira
+    0%
+      transform: rotateY(0deg)
+    10%
+      transform: rotateY(360deg)
+    100%
+      transform: rotateY(360deg)
+
+
+
+/****** HAMBURGER MENU ******/
+.menu, .close
+  width: 22px
+  height: 22px
+  cursor: pointer
+  float: right
+  top: 27px
+  position: relative
+  z-index: 99999
+  +transition(all 0.3s ease)
+
+.menu, .close 
+  span
+    width: 100%
+    height: 3px
+    background: white
+    display: block
+    position: relative
+    top: 7px
+    +transition(all .3s ease)
+    +border-radius(5px)
+    
+
+.menu, .close 
+  span:before, span:after
+    content: ""
+    width: 100%
+    height: 3px
+    background: white
+    display: block
+    position: absolute
+    +transition(all 0.3s ease)
+    +border-radius(5px)
+
+
+.menu, .close 
+  span:before
+    top: -7px
+
+.menu, .close 
+  span:after
+    top: 7px
+
+.menu.open, .close.open
+  span
+    background: transparent
+
+.menu.open, .close.open 
+  span:before
+    +transform(matrix(.7,.7,-.7,.7,0,6))
+
+.menu.open, .close.open
+  span:after
+    +transform(matrix(.7,-.7,.7,.7,0,-8))
+
+/****** WORK MENU ******/
+
+.workMenu
+  background: rgba(28,54,66,.97)
+  height: 100vh
+  left: 0
+  margin: 0
+  padding: 0
+  position: fixed
+  width: 100vw
+  z-index: 999
+  display: none
+
+.workMenu__container
+  position: absolute
+  top: 50%
+  margin-top: -107px
+  width: 100%
+
+.workMenu__enlace
+  display: block
+  text-align: center
+  margin-bottom: 30px
+  &:hover
+    .workMenu__imageCont
+      border: solid 3px #009688
+      +transform(scale(.95))
+    p
+      color: #009688
+      letter-spacing: 2px
+  p
+    +transition(all .3s ease)
+    margin: 5px 0 0
+    color: white
+    text-decoration: none
+    letter-spacing: .3px
+
+.workMenu__imageCont
+  background-size: cover !important
+  width: 130px
+  height: 70px
+  overflow: hidden
+  margin: 0 auto
+  border: solid 3px #CFD8DC
+  +transition(all .3s ease)
+
+
+
+    
+  

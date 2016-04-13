@@ -1,0 +1,135 @@
+/********************** ABOUT **********************/
+
+/*------- hero ------- */
+
+.hero__title
+	color: white
+	font-size: 1.5em
+	font-weight: 300
+	letter-spacing: 1px
+	top: 50%
+	position: relative
+	margin-top: -34px
+
+
+/*------- HI ------- */
+
+.hi
+	text-align: center
+	padding: 50px 0
+
+.hi__title
+	font-weight: 500
+	color: #607D8B
+	margin-top: 0
+	margin-bottom: 50px
+	font-size: 1.5em
+	letter-spacing: 0.75px
+
+.hi__txt
+	margin-bottom: 50px
+	margin-top: 0
+	letter-spacing: 0.3px
+
+.hi__roleYear
+	color: #B6B6B6
+	margin-top: 0
+	margin-bottom: 0
+
+/*------- ROCK ------- */
+
+.rock
+	background: url(../images/bg-about-solrac.jpg) center top no-repeat
+	background-size: cover
+	text-align: center
+	padding: 50px 0
+
+.rock__txt
+	color: #CFD8DC
+	letter-spacing: 0.3px
+
+/*------- GREEN FOOTER ------- */
+
+.green
+	background-color: #009688
+	padding: 20px 0
+	text-align: center
+
+.green__btn
+	color: white
+	font-weight: 500
+	letter-spacing: 4.7px
+	position: relative
+	display: inline-block
+	z-index: 3
+	+transition(all .3s ease)
+	margin-top: 20px 
+	margin-bottom: 20px
+
+
+	&:hover
+		letter-spacing: 6.7px
+
+	&:after
+		content: ""
+		position: absolute
+		width: 170px
+		height: 1px
+		left: 50%
+		margin-left: -87px
+		background: white
+		bottom: -4px
+		z-index: 1
+		+transition(all .3s ease)
+
+	&:hover:after
+		bottom: 8px
+
+/*------- VIDEOS ------- */
+
+.videos
+	background-color: #1C3642
+
+.video
+	height: 180px
+	background-size: cover !important
+	position: relative
+	text-align: center
+	overflow: hidden
+
+.video:before
+	content: ""
+	background-color: rgba(28,54,66,.7)
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+	top: 0
+	z-index: 1
+
+.video__txtContainer
+	margin: -49px auto 0 auto
+	position: relative
+	z-index: 99
+	top: 50%
+
+
+.video__title
+	color: #CFD8DC
+	font-size: 1em
+	font-weight: 500
+	margin: 0
+	position: relative
+	letter-spacing: 4px
+	
+	span
+		display: block
+		font-size: 0.8125em
+		font-weight: 300
+		letter-spacing: 3.82px
+
+.video__erytroxylum
+	background: url(../images/bg-video-erytroxylum.jpg) center top no-repeat
+.video__losperros
+	background: url(../images/bg-video-losperros.jpg) center top no-repeat
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <style>	
+
+    	.menu {
+    	  padding-left: 0;
+    	  margin-top: 0;
+    	  margin-bottom: 0;
+    	  list-style: none;
+    	  background: #53942b;
+    	  display: none;
+    	}
+    	.menu li {
+    	  border-bottom: 1px solid rgba(0,0,0,0.2);
+    	  text-align: center;
+    	  margin: 0;
+    	  position: relative;
+    	}
+    	.menu li {
+    	  border-bottom: 1px solid rgba(0,0,0,0.2);
+    	  text-align: center;
+    	  margin: 0;
+    	  position: relative;
+    	}
+    	.menu li a:last-child {
+    	  border: none;
+    	}
+    	.menu a, .acordeon-titulo {
+    	  color: #fff;
+    	  text-decoration: none;
+    	  line-height: 3;
+    	  display: block;
+    	  padding-left: 1em;
+    	  font-weight: bold;
+    	  font-size: 1em;
+    	  position: relative;
+    	}
+
+    	#toggle-menu {
+    	  background: #4f8d29;
+    	  line-height: 2;
+    	  color: #fff;
+    	  padding-left: 1em;
+    	  font-size: 1em;
+    	  cursor: pointer;
+    	}
+    	#toggle-submenu {
+    	  background: #4f8d29;
+    	  line-height: 2;
+    	  color: #fff;
+    	  padding-left: 1em;
+    	  font-size: 1em;
+    	  cursor: pointer;
+    	}
+    	.acordeon-contenido {
+    	  display: none;
+    	  color: #fff;
+
+    	}
+    	@media screen and (min-width: 768px) {
+    	  .menu {
+    	    display: flex;
+    	  }
+    	  .menu li {
+    	    text-align: center;
+    	    border-right: 1px solid rgba(0,0,0,0.2);
+    	    flex: auto;
+    	  }
+    	  .menu a {
+    	    padding-left: 0;
+    	  }
+    	  #toggle-menu {
+    	    display: none;
+    	  }
+
+    	  .menu .acordeon-contenido {
+	    	  position: absolute;
+	    	  top: 10px;
+	    	  left: 0;
+    		}
+    	}
+
+    </style>
+  </head>
+  <body id="about">
+    <nav>
+		  <div id="toggle-menu">Menu</div>
+		  
+		  <ul class="menu">
+		    
+		    <li> 
+		      <h2 class="acordeon-titulo">Direccion Licenciatura</h2>
+		      <p class="acordeon-contenido">skdfnmjslkdfsdkfj</p>
+		    </li>
+		    
+		    <li> 
+		      <h2 class="acordeon-titulo">Direccion Posgrado</h2>
+		      <p class="acordeon-contenido">skdfnmjslkdfsdkfj</p>
+		    </li>
+		    
+		    <li> 
+		      <h2 class="acordeon-titulo">Difusion</h2>
+		      <p class="acordeon-contenido">skdfnmjslkdfsdkfj</p>
+		    </li>
+		    
+		    <li><a href="#">Coordinacion Financiera</a></li>
+		    <li><a href="#">Recurso Humanos</a></li>
+		    <li><a href="#">Sistemas</a></li>
+		    
+		    <li> 
+		      <h2 class="acordeon-titulo">Otros</h2>
+		      <p class="acordeon-contenido">skdfnmjslkdfsdkfj</p>
+		    </li>
+		  
+		  </ul>
+
+		</nav>
+
+    <script src="js/jquery.js"></script>
+    <script>
+    	$('#toggle-menu').click(function(){
+    		$(this).next().slideToggle();
+    	})
+
+    	$('.menu').on('click','h2',function(){
+    		$(this).parent().find("p").slideToggle();;
+    	});
+
+    </script>
+  </body>
+</html>

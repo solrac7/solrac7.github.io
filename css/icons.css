@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'icomoon';
+    src:
+        url('fonts/icomoon.ttf?vubzab') format('truetype'),
+        url('fonts/icomoon.woff?vubzab') format('woff'),
+        url('fonts/icomoon.svg?vubzab#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #607D8B;
+    font-size: 3em;
+    padding: 0 20px 30px 20px;
+    display: inline-block;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+    content: "\e911";
+    color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    font-size: .27em;
+    animation: arrow 3s ease infinite;
+    -webkit-animation: arrow 3s ease infinite;
+    -moz-animation: arrow 3s ease infinite;
+}
+
+@keyframes arrow {
+    0%   {bottom: 70px;} 
+    20%  {bottom: 50px; opacity:0;}
+    21%  {bottom: 90px; opacity:0;}
+    41% {bottom: 70px; opacity: 1}  
+    100% {bottom: 70px; opacity: 1}  
+}
+
+@-moz-keyframes arrow {
+    0%   {bottom: 70px;} 
+    20%  {bottom: 50px; opacity:0;}
+    21%  {bottom: 90px; opacity:0;}
+    41% {bottom: 70px; opacity: 1}  
+    100% {bottom: 70px; opacity: 1}  
+}
+
+@-webkit-keyframes arrow {
+    0%   {bottom: 70px;} 
+    20%  {bottom: 50px; opacity:0;}
+    21%  {bottom: 90px; opacity:0;}
+    41% {bottom: 70px; opacity: 1}  
+    100% {bottom: 70px; opacity: 1}  
+}
+
+.icon-ai:before {
+    content: "\e900";
+}
+
+.icon-arrow-left:before{
+    content: "\e901";
+    font-size: .6em;
+}
+.icon-arrow-right:before {
+    content: "\e902";
+    font-size: .6em;
+}
+
+[dir='rtl'] .icon-arrow-left
+{
+    right: 30px;
+    left: auto;
+}
+.icon-arrow-left{
+    left: 30px;
+}
+
+.icon-arrow-right
+{
+    right: 30px;
+}
+[dir='rtl'] .icon-arrow-right
+{
+    right: auto;
+    left: 30px;
+}
+
+.icon-arrow-left, .icon-arrow-right{
+    position: absolute;
+    top: 50%;
+    display: block;
+    padding: 0;
+    margin-top: -10px\9; /*lte IE 8*/
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 999999;
+    display: none !important;
+}
+
+.icon-arrow-left:hover:before, .icon-arrow-right:hover:before{
+    color: #009688
+}
+.icon-bootstrap:before {
+    content: "\e903";
+}
+.icon-browserify:before {
+    content: "\e904";
+}
+.icon-css3:before {
+    content: "\e905";
+}
+.icon-git:before {
+    content: "\e906";
+}
+
+.icon-github, .icon-linkedin, .icon-twitter{
+    padding: 0 5px;
+}
+.icon-github:before {
+    content: "\e907";
+    color: white;
+    font-size: .6em;
+}
+.icon-html5:before {
+    content: "\e908";
+}
+.icon-jquery:before {
+    content: "\e909";
+}
+.icon-js:before {
+    content: "\e90a";
+}
+.icon-linkedin:before {
+    content: "\e90b";
+    color: white;
+    font-size: .6em;
+}
+.icon-play {
+    padding-bottom: 10px
+}
+.icon-play:before {
+    content: "\e90c";
+    color: #CFD8DC;
+}
+.icon-react:before {
+    content: "\e90d";
+}
+.icon-sass:before {
+    content: "\e90e";
+}
+.icon-sketch:before {
+    content: "\e90f";
+}
+.icon-twitter:before {
+    content: "\e910";
+    color: white;
+    font-size: .6em;
+}
+

@@ -1,0 +1,203 @@
+/********************** MEDIA QUERIES **********************/
+
+@media (min-width: 768px)
+
+	#home .hero .hero__txtContainer
+		margin-top: -65.5px
+		margin-left: -243.1485px
+
+	.hero__txtContainer .hero__titleHome
+		font-size: 4.375em
+
+	.hero__txtContainer .hero__subtitle
+		margin-left: 0
+		margin-top: -17px
+		font-size: 1.25em
+		letter-spacing: 5.27px
+
+	.little__txt
+		padding: 0 20%
+	
+	/*------- Work Home ------- */
+	.works .work
+		height: 237px
+		margin-bottom: 15px
+
+	.work__loyal, .work__facilads
+		border-right: solid 7.5px white
+		border-left: solid 15px white
+
+	.work__bci, .work__shapes
+		border-left: solid 7.5px white
+		border-right: solid 15px white
+	
+	.work__shots
+		border-left: solid 15px white
+		border-right: solid 15px white
+
+	.workMenu__imageCont.work__shots, .workMenu__imageCont.work__bci, .workMenu__imageCont.work__shapes, .workMenu__imageCont.work__facilads, .workMenu__imageCont.work__loyal
+		border-left: solid 3px #CFD8DC
+		border-right: solid 3px #CFD8DC
+
+	.work__title
+		line-height: 237px !important
+
+	/*------- Header ------- */
+	.menu
+		display: none
+
+	.col-xs-9
+		.header__menu
+			height: auto 
+			position: relative 
+			width: auto 
+			display: block 
+			top: 95px
+			float: right
+
+	.header__menu
+		ul
+			position: relative
+			top: 0
+			margin-top: 0px
+
+	.header__menu
+		ul
+			li 
+				display: inline
+				text-align: left
+
+	nav
+		.header__menu
+			ul 
+				li
+					a
+						color: #607D8B
+						text-transform: uppercase
+						font-size: 1.0625em 
+						font-weight: 500 
+						margin-left: 67px
+						&:hover
+							color: white 
+
+	.workMenu
+		.workMenu__container
+			margin-top: -205px
+			margin-left: -375px
+			width: 750px
+			left: 50%
+			.workMenu__enlace	
+				.workMenu__imageCont
+					height: 170px
+					width: 100%
+				p
+					margin: 10px 0 0 
+					font-size: 1.1em
+					font-weight: 500
+					text-transform: uppercase
+
+
+	.hero 
+		.hero__title, .contact__title
+			width: 70%
+			margin: -48px auto 0 auto
+			font-size: 1.7em
+			font-weight: 400
+
+	.hero 
+		.contact__title
+			width: 70%
+			margin: 0 auto 
+			font-size: 1.7em
+			font-weight: 400
+		.contact__txt
+			font-size: 1.25em
+
+	.col-xs-12
+		.contact__container
+			margin-top: 320px
+	
+	/*------- WORK BCI------- */
+	
+	.col-xs-12 
+		.hi__txt
+			font-size: 1.25em
+			padding: 0 7%
+
+	.icon-arrow-left, .icon-arrow-right
+		display: block !important
+
+
+@media (min-width: 992px)
+	/*------- Work Home ------- */
+	.works
+		.work
+			height: 317px	
+			p
+				font-size: 1.875em 
+
+	.workMenu
+		.workMenu__container
+			margin-top: -55.5px
+			margin-left: -485px
+			width: 970px
+			.workMenu__enlace	
+				.workMenu__imageCont
+					height: 106px
+
+
+@media (min-width: 1200px)
+
+	body 
+		.bg
+			background-color: rgba(28,54,66,.3)
+			&:hover
+				background-color: rgba(28,54,66,1)
+				-webkit-box-shadow: 0px 3px 30px 0px rgba(0,0,0,.7)
+				-moz-box-shadow: 0px 3px 30px 0px rgba(0,0,0,.7)
+				box-shadow: 0px 3px 30px 0px rgba(0,0,0,.7)
+
+	/*------- Work Home ------- */
+	.work:before, .row .work p
+		opacity: 0
+		+transition(all 0.3s ease)
+
+
+
+	/*--- Animation Work Title --- */
+	.work:hover:before, .work:hover p
+		display: block !important
+		cursor: pointer
+		+transition(all 0.3s ease)
+		opacity: 1 !important
+
+	.row
+		.work
+			p
+				span
+					+transition(all 0.3s ease)
+					margin: 10px 0 0 -7px
+			&:hover
+				p
+					letter-spacing: 10px
+					span
+						margin: -3px 0 0 -10px
+
+
+	.workMenu
+		.workMenu__container
+			margin-top: -66px
+			margin-left: -585px
+			width: 1170px
+			.workMenu__enlace	
+				.workMenu__imageCont
+					height: 131px
+
+	/*------- WORK BCI------- */
+	
+	.col-xs-12 
+		.hi__txt
+			font-size: 1.25em
+			padding: 0 20%
+
+ 

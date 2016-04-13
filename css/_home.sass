@@ -1,0 +1,143 @@
+/********************** HOME **********************/
+
+/*------- hero ------- */
+
+.parallax-window
+	height: 100vh
+	text-align: center
+
+.home.parallax-window
+	background-position: 20% top !important
+
+.hero
+	div
+		position: relative
+		height: 100vh
+
+.hero 
+	.hero__txtContainer
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -124px
+		height: auto !important
+		margin-top: -37px
+
+.hero__titleHome
+	color: white
+	font-size: 1.875em
+	font-weight: 500
+	letter-spacing: 7px
+	margin-bottom: -7px
+	margin-top: 0px
+
+.hero__subtitle
+	margin-top: 0px
+	color: #CFD8DC
+	letter-spacing: 1.74px
+	font-weight: 300
+	font-size: 0.8125em
+	margin-left: -4px
+
+/*------- Little about me ------- */
+
+.little
+	text-align: center
+	padding: 50px 0
+
+.little__title
+	font-weight: 500
+	color: #607D8B
+	margin-top: 0
+	margin-bottom: 50px
+	font-size: 1.125em
+	letter-spacing: 0.3px
+
+.little__txt
+	color: #212121
+	font-size: 1.25em
+	margin-bottom: 50px
+	margin-top: 0
+
+.little__btn
+	color: #009688
+	font-weight: 500
+	letter-spacing: 4.7px
+	position: relative
+	display: inline-block
+	+transition(all .3s ease)
+
+	&:hover
+		letter-spacing: 6.7px
+
+	&:after
+		content: ""
+		position: absolute
+		width: 180px
+		height: 1px
+		left: 50%
+		margin-left: -92px
+		background: #009688
+		bottom: -4px
+		z-index: 1
+		+transition(all .3s ease)
+
+	&:hover:after
+		bottom: 8px
+
+
+
+/*------- Work ------- */
+
+.work
+	height: 180px
+	background-size: cover !important
+	position: relative
+	text-align: center
+	overflow: hidden
+	p
+		color: white
+		top: 50%
+		margin: -21px 0 0
+		font-size: 1.25em
+		font-weight: 500
+		letter-spacing: 5px
+		z-index: 2
+		position: inherit
+		span
+			display: block
+			font-size: .5em
+			letter-spacing: 0
+			opacity: .7
+			margin: -3px 0 0 -3px
+
+
+.work:before
+	content: ""
+	background-color: rgba(28,54,66,.7)
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+	top: 0
+	z-index: 1
+
+
+.work__loyal
+	background: url(../images/work-loyal-home.jpg) center top no-repeat
+
+.work__bci
+	background: url(../images/work-bci-home.jpg) center top no-repeat
+
+.work__shapes
+	background: url(../images/work-shapes-home.jpg) center top no-repeat
+	p
+		margin: -14px 0 0
+
+.work__facilads
+	background: url(../images/work-facilads-home.jpg) center top no-repeat
+
+.work__shots
+	background: url(../images/work-shots-home.jpg) center top no-repeat
+	p
+		margin: -14px 0 0
