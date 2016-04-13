@@ -138,16 +138,16 @@ $(function(){
 		workAnimate();
 	} 
 
- //  // SLIDE BCI
-	// $('.slide').slick({
-	//   dots: false,
-	//   infinite: true,
-	//   speed: 700,
-	//   fade: true,
-	//   cssEase: 'linear',
-	//   autoplay: true,
-	//   autoplaySpeed: 2000
-	// });
+  // SLIDE BCI
+	$('.slide').slick({
+	  dots: false,
+	  infinite: true,
+	  speed: 700,
+	  fade: true,
+	  cssEase: 'linear',
+	  autoplay: true,
+	  autoplaySpeed: 2000
+	});
 
 })
 
