@@ -28,7 +28,7 @@
 }
 
 .icon-arrow-down:before {
-    content: "\e911";
+    content: "\e901";
     color: white;
     position: absolute;
     left: 50%;
@@ -68,11 +68,11 @@
 }
 
 .icon-arrow-left:before{
-    content: "\e901";
+    content: "\e902";
     font-size: .6em;
 }
 .icon-arrow-right:before {
-    content: "\e902";
+    content: "\e903";
     font-size: .6em;
 }
 
@@ -116,59 +116,107 @@
     color: #009688
 }
 .icon-bootstrap:before {
-    content: "\e903";
-}
-.icon-browserify:before {
     content: "\e904";
 }
-.icon-css3:before {
+.icon-browserify:before {
     content: "\e905";
 }
-.icon-git:before {
+.icon-css3:before {
     content: "\e906";
 }
-
-.icon-github, .icon-linkedin, .icon-twitter{
-    padding: 0 5px;
-}
-.icon-github:before {
+.icon-git:before {
     content: "\e907";
+}
+
+/*.icon-github, .icon-linkedin, .icon-twitter{
+    padding: 0 5px;
+}*/
+.icon-github:before {
+    content: "\e908";
     color: white;
     font-size: .6em;
 }
 .icon-html5:before {
-    content: "\e908";
-}
-.icon-jquery:before {
     content: "\e909";
 }
-.icon-js:before {
+.icon-jquery:before {
     content: "\e90a";
 }
-.icon-linkedin:before {
+.icon-js:before {
     content: "\e90b";
-    color: white;
-    font-size: .6em;
+}
+.icon-linkedin{
+    font-size: 2.4em;
+    position: relative;
+    padding: 0;
+    margin-left: 10px;
+}
+.icon-linkedin:before {
+    content: "\e90c";
+    color: #0082BD;
+    font-size: .7em;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.hi__txt:hover .icon-linkedin:before{
+    color: #0082BD;
 }
 .icon-play {
     padding-bottom: 10px
 }
 .icon-play:before {
-    content: "\e90c";
+    content: "\e90d";
     color: #CFD8DC;
 }
 .icon-react:before {
-    content: "\e90d";
-}
-.icon-sass:before {
     content: "\e90e";
 }
-.icon-sketch:before {
+
+.icon-rock:before {
     content: "\e90f";
+    color: #CFD8DC;
+}
+
+.icon-sass:before {
+    content: "\e910";
+}
+.icon-sketch:before {
+    content: "\e911";
 }
 .icon-twitter:before {
-    content: "\e910";
+    content: "\e912";
     color: white;
     font-size: .6em;
 }
 
+.icon-ps:before {
+    content: "\e913";
+}
+
+.icon-wordpress:before {
+    content: "\e914";
+}
+
+.icon-email{
+    font-size: .8em;
+    padding: 0 7px 0;
+}
+
+.icon-mobile{
+    font-size: .9em;
+    padding: 0 5px 0;
+    position: relative;
+    top: 1px
+}
+
+.icon-email:before {
+    content: "\e915";
+    color: white;
+}
+
+.icon-mobile:before {
+    content: "\e916";
+    color: white;
+}

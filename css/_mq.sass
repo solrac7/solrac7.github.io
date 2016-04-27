@@ -2,18 +2,23 @@
 
 @media (min-width: 768px)
 
-	#home .hero .hero__txtContainer
-		margin-top: -65.5px
-		margin-left: -243.1485px
+	#home 
+		.hero 
+			.hero__txtContainer
+				margin-top: -65.5px
+				margin-left: -243.1485px
 
-	.hero__txtContainer .hero__titleHome
-		font-size: 4.375em
+	.hero__txtContainer 
+		.hero__titleHome
+			font-size: 4.375em
 
-	.hero__txtContainer .hero__subtitle
-		margin-left: 0
-		margin-top: -17px
-		font-size: 1.25em
-		letter-spacing: 5.27px
+	.hero__txtContainer 
+		.hero__subtitle
+			margin-left: 0
+			margin-top: -17px
+			font-size: 1.25em
+			letter-spacing: 5.27px
+
 
 	.little__txt
 		padding: 0 20%
@@ -74,7 +79,7 @@
 					a
 						color: #607D8B
 						text-transform: uppercase
-						font-size: 1.0625em 
+						font-size: 1em 
 						font-weight: 500 
 						margin-left: 67px
 						&:hover
@@ -98,18 +103,11 @@
 
 
 	.hero 
-		.hero__title, .contact__title
-			width: 70%
-			margin: -48px auto 0 auto
-			font-size: 1.7em
+		.about__title, .contact__title
+			font-size: 2em
 			font-weight: 400
 
 	.hero 
-		.contact__title
-			width: 70%
-			margin: 0 auto 
-			font-size: 1.7em
-			font-weight: 400
 		.contact__txt
 			font-size: 1.25em
 
@@ -119,13 +117,47 @@
 	
 	/*------- WORK BCI------- */
 	
-	.col-xs-12 
-		.hi__txt
-			font-size: 1.25em
-			padding: 0 7%
 
 	.icon-arrow-left, .icon-arrow-right
 		display: block !important
+
+
+	/*------- ABOUT------- */
+
+	.col-xs-12
+		.rock__txt
+			font-size: 1.5em
+			margin: 0
+
+	.col-xs-12 
+		.hi__txt
+			font-size: 1.25em
+			padding: 0
+	
+	body
+		.hi
+			background-image: url(../images/bg-about-hola.jpg)
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: -530px top
+			text-align: left
+			height: 540px
+			
+			.hi__title
+				color: white
+				text-shadow: 1px 1px 70px rgba(0,0,0,.3)
+				letter-spacing: 0
+
+			.hi__txt
+				color: white
+				font-weight: 400 
+				font-size: 1.17em
+				text-shadow: 1px 1px 70px rgba(0,0,0,.3)
+				line-height: 27px
+			
+			.hi__image
+				display: none
+
 
 
 @media (min-width: 992px)
@@ -145,6 +177,17 @@
 				.workMenu__imageCont
 					height: 106px
 
+	.skills__icons
+		[class^="icon-"], [class*="icon-"]
+			font-size: 3.7em
+
+	body
+		.hi
+			background-position: -320px top
+
+			.hi__txt
+				font-size: 1.3em
+
 
 @media (min-width: 1200px)
 
@@ -153,9 +196,7 @@
 			background-color: rgba(28,54,66,.3)
 			&:hover
 				background-color: rgba(28,54,66,1)
-				-webkit-box-shadow: 0px 3px 30px 0px rgba(0,0,0,.7)
-				-moz-box-shadow: 0px 3px 30px 0px rgba(0,0,0,.7)
-				box-shadow: 0px 3px 30px 0px rgba(0,0,0,.7)
+				+box-shadow(0px 3px 30px 0px rgba(0,0,0,.7))
 
 	/*------- Work Home ------- */
 	.work:before, .row .work p
@@ -193,11 +234,19 @@
 				.workMenu__imageCont
 					height: 131px
 
-	/*------- WORK BCI------- */
-	
-	.col-xs-12 
-		.hi__txt
-			font-size: 1.25em
-			padding: 0 20%
+	/*------- ICONS ABOUT------- */
+	.skills__icons
+		[class^="icon-"], [class*=" icon-"]
+			font-size: 4.05em
 
+	body
+		.hi
+			background-position: center top
+
+	nav
+		.header__menu
+			ul 
+				li
+					a
+						font-size: 1.0625em
  

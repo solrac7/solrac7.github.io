@@ -8,12 +8,12 @@
 $(function(){
 
 	// PARALLAX
-	$('.home.parallax-window').parallax({imageSrc: '../portafolio/images/bg-home.jpg'});
-	$('.about.parallax-window').parallax({imageSrc: '../portafolio/images/bg-about.jpg'});
-	$('.loyal.parallax-window').parallax({imageSrc: '../portafolio/images/bg-hero-loyal.jpg'});
-	$('.bci.parallax-window').parallax({imageSrc: '../portafolio/images/bg-hero-bci.jpg'});
-	$('.shapes.parallax-window').parallax({imageSrc: '../portafolio/images/bg-hero-ilustraciones.jpg'});
-	$('.contact.parallax-window').parallax({imageSrc: '../portafolio/images/bg-contact.jpg'});
+	$('.home.parallax-window').parallax({imageSrc: '../images/bg-home.jpg'});
+	$('.about.parallax-window').parallax({imageSrc: '../images/bg-about.jpg'});
+	$('.loyal.parallax-window').parallax({imageSrc: '../images/bg-hero-loyal.jpg'});
+	$('.bci.parallax-window').parallax({imageSrc: '../images/bg-hero-bci.jpg'});
+	$('.shapes.parallax-window').parallax({imageSrc: '../images/bg-hero-ilustraciones.jpg'});
+	$('.contact.parallax-window').parallax({imageSrc: '../images/bg-contact.jpg'});
 
 
   // HEADER
@@ -48,27 +48,27 @@ $(function(){
   // MENU ENLACES
   var botonera =
   	'<ul>' +
-  	  '<li class="about"><a href="javascript:;">About</a></li>' +
-  	  '<li class="workcito"><a href="/#works">Work</a></li>' +
-  	  '<li class="contact"><a href="javascript:;">Contact</a></li>' +
+  	  '<li class="about"><a href="about.html">Acerca</a></li>' +
+  	  '<li class="workcito"><a href="/#works">Trabajos</a></li>' +
+  	  '<li class="contact"><a href="contact.html">Contacto</a></li>' +
   	'</ul>'
   var $header__menu = $(".header__menu");
   $header__menu.append(botonera);
 
 
- // MEDIAQUERIES PARA MENU MOBILE
-  var mediaquery = window.matchMedia("(max-width: 767px)");
-	function handleOrientationChange(mediaquery) {
-		if (mediaquery.matches) {
-		 	$(".workcito").click(function(e){
-		 		e.preventDefault();
-		 		$header__menu.fadeOut("fast");
-		 		$(".menu").fadeOut("fast");
-		 	})
-		}
-	}	
-	handleOrientationChange(mediaquery);
-	mediaquery.addListener(handleOrientationChange);
+ // // MEDIAQUERIES PARA MENU MOBILE
+ //  var mediaquery = window.matchMedia("(max-width: 767px)");
+	// function handleOrientationChange(mediaquery) {
+	// 	if (mediaquery.matches) {
+	// 	 	$(".workcito").click(function(e){
+	// 	 		e.preventDefault();
+	// 	 		$header__menu.fadeOut("fast");
+	// 	 		$(".menu").fadeOut("fast");
+	// 	 	})
+	// 	}
+	// }	
+	// handleOrientationChange(mediaquery);
+	// mediaquery.addListener(handleOrientationChange);
 
 
   // WORK MENU
@@ -138,16 +138,19 @@ $(function(){
 		workAnimate();
 	} 
 
-  // SLIDE BCI
-	$('.slide').slick({
-	  dots: false,
-	  infinite: true,
-	  speed: 700,
-	  fade: true,
-	  cssEase: 'linear',
-	  autoplay: true,
-	  autoplaySpeed: 2000
-	});
+  if ($(".ws").length) {
+    // SLIDE BCI
+    $('.slide').slick({
+      dots: false,
+      infinite: true,
+      speed: 700,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
+  }
+  
 
 })
 
