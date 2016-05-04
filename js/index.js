@@ -8,12 +8,12 @@
 $(function(){
 
 	// PARALLAX
-	$('.home.parallax-window').parallax({imageSrc: '../images/bg-home.jpg'});
-	$('.about.parallax-window').parallax({imageSrc: '../images/bg-about.jpg'});
-	$('.loyal.parallax-window').parallax({imageSrc: '../images/bg-hero-loyal.jpg'});
-	$('.bci.parallax-window').parallax({imageSrc: '../images/bg-hero-bci.jpg'});
-	$('.shapes.parallax-window').parallax({imageSrc: '../images/bg-hero-ilustraciones.jpg'});
-	$('.contact.parallax-window').parallax({imageSrc: '../images/bg-contact.jpg'});
+	$('.home.parallax-window').parallax({imageSrc: '../portafolio/images/bg-home.jpg'});
+	$('.about.parallax-window').parallax({imageSrc: '../portafolio/images/bg-about.jpg'});
+	$('.loyal.parallax-window').parallax({imageSrc: '../portafolio/images/bg-hero-loyal.jpg'});
+	$('.bci.parallax-window').parallax({imageSrc: '../portafolio/images/bg-hero-bci.jpg'});
+	$('.shapes.parallax-window').parallax({imageSrc: '../portafolio/images/bg-hero-ilustraciones.jpg'});
+	$('.contact.parallax-window').parallax({imageSrc: '../portafolio/images/bg-contact.jpg'});
 
 
   // HEADER OCULTAR/MOSTRAR SEGUN SCROLL
