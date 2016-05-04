@@ -160,19 +160,34 @@
     nav .header__menu ul li a:hover {
       color: white; }
 
-  .workMenu .workMenu__container {
-    margin-top: -205px;
-    margin-left: -375px;
-    width: 750px;
-    left: 50%; }
-    .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
-      height: 170px;
-      width: 100%; }
-    .workMenu .workMenu__container .workMenu__enlace p {
-      margin: 10px 0 0;
-      font-size: 1.1em;
-      font-weight: 500;
-      text-transform: uppercase; }
+  .row .workMenu {
+    background: rgba(28, 54, 66, 0.97);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 999;
+    display: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    transition: none; }
+    .row .workMenu .workMenu__container {
+      margin-top: -205px;
+      margin-left: -375px;
+      width: 750px;
+      left: 50%; }
+      .row .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
+        height: 170px;
+        width: 100%; }
+      .row .workMenu .workMenu__container .workMenu__enlace p {
+        margin: 10px 0 0;
+        font-size: 1.1em;
+        font-weight: 500;
+        text-transform: uppercase; }
 
   .hero .about__title, .hero .contact__title {
     font-size: 2em;
@@ -196,6 +211,10 @@
   .col-xs-12 .hi__txt {
     font-size: 1.25em;
     padding: 0; }
+    .col-xs-12 .hi__txt .hi__txtEnlace {
+      color: white; }
+      .col-xs-12 .hi__txt .hi__txtEnlace:hover {
+        color: #009688; }
 
   body .hi {
     background-image: url(../images/bg-about-hola.jpg);
@@ -215,7 +234,10 @@
       text-shadow: 1px 1px 70px rgba(0, 0, 0, 0.3);
       line-height: 27px; }
     body .hi .hi__image {
-      display: none; } }
+      display: none; }
+
+  .icon-linkedin:before {
+    color: white; } }
 @media (min-width: 992px) {
   /*------- Work Home ------- */
   .works .work {
@@ -223,11 +245,11 @@
     .works .work p {
       font-size: 1.875em; }
 
-  .workMenu .workMenu__container {
+  .row .workMenu .workMenu__container {
     margin-top: -55.5px;
     margin-left: -485px;
     width: 970px; }
-    .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
+    .row .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
       height: 106px; }
 
   .skills__icons [class^="icon-"], .skills__icons [class*="icon-"] {
@@ -236,7 +258,10 @@
   body .hi {
     background-position: -320px top; }
     body .hi .hi__txt {
-      font-size: 1.3em; } }
+      font-size: 1.3em; }
+
+  .col-xs-12 .little__txt {
+    font-size: 1.68em; } }
 @media (min-width: 1200px) {
   body .bg {
     background-color: rgba(28, 54, 66, 0.3); }
@@ -275,11 +300,11 @@
     .row .work:hover p span {
       margin: -3px 0 0 -10px; }
 
-  .workMenu .workMenu__container {
+  .row .workMenu .workMenu__container {
     margin-top: -66px;
     margin-left: -585px;
     width: 1170px; }
-    .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
+    .row .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
       height: 131px; }
 
   /*------- ICONS ABOUT------- */
@@ -317,8 +342,8 @@ header {
 
 .header__menu {
   background: rgba(28, 54, 66, 0.97);
-  height: 100vh;
   left: 0;
+  height: 100vh;
   margin: 0;
   padding: 0;
   position: fixed;
@@ -327,11 +352,16 @@ header {
   display: none; }
 
 .header__menu ul {
+  list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
   top: 50%;
-  margin-top: -71px; }
+  margin-top: -71px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .header__menu ul li {
   margin-bottom: 20px;
@@ -368,6 +398,9 @@ header {
   -moz-perspective: 50px;
   perspective: 50px;
   width: 50px;
+  top: -50px;
+  left: 0;
+  opacity: 0;
   position: relative;
   z-index: 99999;
   display: block;
@@ -486,15 +519,16 @@ header {
 
 /****** WORK MENU ***** */
 .workMenu {
-  background: rgba(28, 54, 66, 0.97);
   height: 100vh;
-  left: 0;
   margin: 0;
   padding: 0;
-  position: fixed;
   width: 100vw;
-  z-index: 999;
-  display: none; }
+  z-index: 9999;
+  margin-left: 100vw;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .workMenu__container {
   position: absolute;
@@ -536,6 +570,27 @@ header {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+
+/****** animaciones ***** */
+.upDown {
+  opacity: 1;
+  top: 0; }
+
+.rightLeft {
+  opacity: 1;
+  left: 15px; }
+
+.left0 {
+  left: 0 !important; }
+
+.left-100 {
+  left: -100vw !important; }
+
+.mgLeft0 {
+  margin-left: 0 !important; }
+
+.mgLeft100 {
+  margin-left: 100vw !important; }
 
 /********************** HOME ********************* */
 /*------- hero ------- */
@@ -710,7 +765,7 @@ header {
 
 .hi__txtEnlace {
   color: #009688;
-  border-bottom: solid 1px #009688;
+  border-bottom: solid 2px #009688;
   text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;

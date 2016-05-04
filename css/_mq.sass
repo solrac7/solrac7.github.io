@@ -85,21 +85,33 @@
 						&:hover
 							color: white 
 
-	.workMenu
-		.workMenu__container
-			margin-top: -205px
-			margin-left: -375px
-			width: 750px
-			left: 50%
-			.workMenu__enlace	
-				.workMenu__imageCont
-					height: 170px
-					width: 100%
-				p
-					margin: 10px 0 0 
-					font-size: 1.1em
-					font-weight: 500
-					text-transform: uppercase
+	.row
+		.workMenu
+			background: rgba(28,54,66,.97)
+			left: 0
+			right: 0
+			bottom: 0
+			top: 0
+			margin: 0
+			padding: 0
+			position: fixed
+			z-index: 999
+			display: none
+			+transition(none)
+			.workMenu__container
+				margin-top: -205px
+				margin-left: -375px
+				width: 750px
+				left: 50%
+				.workMenu__enlace	
+					.workMenu__imageCont
+						height: 170px
+						width: 100%
+					p
+						margin: 10px 0 0 
+						font-size: 1.1em
+						font-weight: 500
+						text-transform: uppercase
 
 
 	.hero 
@@ -133,7 +145,11 @@
 		.hi__txt
 			font-size: 1.25em
 			padding: 0
-	
+			.hi__txtEnlace
+				color: white
+				&:hover
+					color: #009688
+
 	body
 		.hi
 			background-image: url(../images/bg-about-hola.jpg)
@@ -158,6 +174,9 @@
 			.hi__image
 				display: none
 
+	.icon-linkedin
+		&:before
+			color: white
 
 
 @media (min-width: 992px)
@@ -167,15 +186,16 @@
 			height: 317px	
 			p
 				font-size: 1.875em 
-
-	.workMenu
-		.workMenu__container
-			margin-top: -55.5px
-			margin-left: -485px
-			width: 970px
-			.workMenu__enlace	
-				.workMenu__imageCont
-					height: 106px
+	
+	.row
+		.workMenu
+			.workMenu__container
+				margin-top: -55.5px
+				margin-left: -485px
+				width: 970px
+				.workMenu__enlace	
+					.workMenu__imageCont
+						height: 106px
 
 	.skills__icons
 		[class^="icon-"], [class*="icon-"]
@@ -187,6 +207,10 @@
 
 			.hi__txt
 				font-size: 1.3em
+
+	.col-xs-12
+		.little__txt
+			font-size: 1.68em
 
 
 @media (min-width: 1200px)
@@ -224,15 +248,15 @@
 					span
 						margin: -3px 0 0 -10px
 
-
-	.workMenu
-		.workMenu__container
-			margin-top: -66px
-			margin-left: -585px
-			width: 1170px
-			.workMenu__enlace	
-				.workMenu__imageCont
-					height: 131px
+	.row
+		.workMenu
+			.workMenu__container
+				margin-top: -66px
+				margin-left: -585px
+				width: 1170px
+				.workMenu__enlace	
+					.workMenu__imageCont
+						height: 131px
 
 	/*------- ICONS ABOUT------- */
 	.skills__icons

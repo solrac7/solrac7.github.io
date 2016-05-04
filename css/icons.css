@@ -220,3 +220,21 @@
     content: "\e916";
     color: white;
 }
+
+.icon-arrow-back {
+    position: absolute;
+    padding: 0;
+    z-index: 99999999;
+    left: 70px;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.icon-arrow-back:before {
+    content: "\e917";
+    color: white;
+    font-size: .6em;
+}
