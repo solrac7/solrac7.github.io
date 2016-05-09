@@ -155,37 +155,45 @@
   nav .header__menu ul li a {
     color: #607D8B;
     text-transform: uppercase;
-    font-size: 1.0625em;
+    font-size: 1em;
     font-weight: 500;
     margin-left: 67px; }
     nav .header__menu ul li a:hover {
       color: white; }
 
-  .workMenu .workMenu__container {
-    margin-top: -205px;
-    margin-left: -375px;
-    width: 750px;
-    left: 50%; }
-    .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
-      height: 170px;
-      width: 100%; }
-    .workMenu .workMenu__container .workMenu__enlace p {
-      margin: 10px 0 0;
-      font-size: 1.1em;
-      font-weight: 500;
-      text-transform: uppercase; }
+  .row .workMenu {
+    background: rgba(28, 54, 66, 0.97);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 999;
+    display: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    transition: none; }
+    .row .workMenu .workMenu__container {
+      margin-top: -205px;
+      margin-left: -375px;
+      width: 750px;
+      left: 50%; }
+      .row .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
+        height: 170px;
+        width: 100%; }
+      .row .workMenu .workMenu__container .workMenu__enlace p {
+        margin: 10px 0 0;
+        font-size: 1.1em;
+        font-weight: 500;
+        text-transform: uppercase; }
 
-  .hero .hero__title, .hero .contact__title {
-    width: 70%;
-    margin: -48px auto 0 auto;
-    font-size: 1.7em;
+  .hero .about__title, .hero .contact__title {
+    font-size: 2em;
     font-weight: 400; }
 
-  .hero .contact__title {
-    width: 70%;
-    margin: 0 auto;
-    font-size: 1.7em;
-    font-weight: 400; }
   .hero .contact__txt {
     font-size: 1.25em; }
 
@@ -193,12 +201,44 @@
     margin-top: 320px; }
 
   /*------- WORK BCI------- */
+  .icon-arrow-left, .icon-arrow-right {
+    display: block !important; }
+
+  /*------- ABOUT------- */
+  .col-xs-12 .rock__txt {
+    font-size: 1.5em;
+    margin: 0; }
+
   .col-xs-12 .hi__txt {
     font-size: 1.25em;
-    padding: 0 7%; }
+    padding: 0; }
+    .col-xs-12 .hi__txt .hi__txtEnlace {
+      color: white; }
+      .col-xs-12 .hi__txt .hi__txtEnlace:hover {
+        color: #009688; }
 
-  .icon-arrow-left, .icon-arrow-right {
-    display: block !important; } }
+  body .hi {
+    background-image: url(../images/bg-about-hola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 78% top;
+    text-align: left;
+    height: 540px; }
+    body .hi .hi__title {
+      color: white;
+      text-shadow: 1px 1px 70px rgba(0, 0, 0, 0.3);
+      letter-spacing: 0; }
+    body .hi .hi__txt {
+      color: white;
+      font-weight: 400;
+      font-size: 1.17em;
+      text-shadow: 1px 1px 70px rgba(0, 0, 0, 0.3);
+      line-height: 27px; }
+    body .hi .hi__image {
+      display: none; }
+
+  .icon-linkedin:before {
+    color: white; } }
 @media (min-width: 992px) {
   /*------- Work Home ------- */
   .works .work {
@@ -206,12 +246,23 @@
     .works .work p {
       font-size: 1.875em; }
 
-  .workMenu .workMenu__container {
+  .row .workMenu .workMenu__container {
     margin-top: -55.5px;
     margin-left: -485px;
     width: 970px; }
-    .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
-      height: 106px; } }
+    .row .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
+      height: 106px; }
+
+  .skills__icons [class^="icon-"], .skills__icons [class*="icon-"] {
+    font-size: 3.7em; }
+
+  body .hi {
+    background-position: 70% top; }
+    body .hi .hi__txt {
+      font-size: 1.3em; }
+
+  .col-xs-12 .little__txt {
+    font-size: 1.68em; } }
 @media (min-width: 1200px) {
   body .bg {
     background-color: rgba(28, 54, 66, 0.3); }
@@ -250,17 +301,22 @@
     .row .work:hover p span {
       margin: -3px 0 0 -10px; }
 
-  .workMenu .workMenu__container {
+  .row .workMenu .workMenu__container {
     margin-top: -66px;
     margin-left: -585px;
     width: 1170px; }
-    .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
+    .row .workMenu .workMenu__container .workMenu__enlace .workMenu__imageCont {
       height: 131px; }
 
-  /*------- WORK BCI------- */
-  .col-xs-12 .hi__txt {
-    font-size: 1.25em;
-    padding: 0 20%; } }
+  /*------- ICONS ABOUT------- */
+  .skills__icons [class^="icon-"], .skills__icons [class*=" icon-"] {
+    font-size: 4.05em; }
+
+  body .hi {
+    background-position: center top; }
+
+  nav .header__menu ul li a {
+    font-size: 1.0625em; } }
 /*********** HEADER ********** */
 header {
   height: 70px;
@@ -287,8 +343,8 @@ header {
 
 .header__menu {
   background: rgba(28, 54, 66, 0.97);
-  height: 100vh;
   left: 0;
+  height: 100vh;
   margin: 0;
   padding: 0;
   position: fixed;
@@ -297,11 +353,16 @@ header {
   display: none; }
 
 .header__menu ul {
+  list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
   top: 50%;
-  margin-top: -71px; }
+  margin-top: -71px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .header__menu ul li {
   margin-bottom: 20px;
@@ -338,6 +399,9 @@ header {
   -moz-perspective: 50px;
   perspective: 50px;
   width: 50px;
+  top: -50px;
+  left: 0;
+  opacity: 0;
   position: relative;
   z-index: 99999;
   display: block;
@@ -353,7 +417,7 @@ header {
     .logo__container:hover #logoSolrac {
       opacity: 0.3; }
   .logo__container #logoSolrac {
-    width: 32px;
+    width: 34px;
     margin-top: 5px;
     -webkit-animation: gira 20s ease infinite;
     -moz-animation: gira 20s ease infinite;
@@ -456,15 +520,16 @@ header {
 
 /****** WORK MENU ***** */
 .workMenu {
-  background: rgba(28, 54, 66, 0.97);
   height: 100vh;
-  left: 0;
   margin: 0;
   padding: 0;
-  position: fixed;
   width: 100vw;
-  z-index: 999;
-  display: none; }
+  z-index: 9999;
+  margin-left: 100vw;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .workMenu__container {
   position: absolute;
@@ -507,6 +572,27 @@ header {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
+/****** animaciones ***** */
+.upDown {
+  opacity: 1;
+  top: 0; }
+
+.rightLeft {
+  opacity: 1;
+  left: 15px; }
+
+.left0 {
+  left: 0 !important; }
+
+.left-100 {
+  left: -100vw !important; }
+
+.mgLeft0 {
+  margin-left: 0 !important; }
+
+.mgLeft100 {
+  margin-left: 100vw !important; }
+
 /********************** HOME ********************* */
 /*------- hero ------- */
 .parallax-window {
@@ -515,10 +601,6 @@ header {
 
 .home.parallax-window {
   background-position: 20% top !important; }
-
-.hero div {
-  position: relative;
-  height: 100vh; }
 
 .hero .hero__txtContainer {
   position: absolute;
@@ -646,48 +728,70 @@ header {
 
 /********************** ABOUT ********************* */
 /*------- hero ------- */
-.hero__title {
+.about__title {
   color: white;
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 1px;
+  margin-top: -34px;
+  margin-left: -160px;
+  position: absolute;
   top: 50%;
-  position: relative;
-  margin-top: -34px; }
+  left: 50%;
+  width: 320px; }
 
 /*------- HI ------- */
 .hi {
-  text-align: center;
-  padding: 50px 0; }
+  background-color: white;
+  padding: 50px 0;
+  text-align: center; }
 
 .hi__title {
   font-weight: 500;
-  color: #607D8B;
   margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-size: 2em;
   letter-spacing: 0.75px; }
 
 .hi__txt {
-  margin-bottom: 50px;
-  margin-top: 0;
-  letter-spacing: 0.3px; }
+  color: #727272;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  letter-spacing: 0.3px;
+  font-size: 1.125em;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
-.hi__roleYear {
-  color: #B6B6B6;
-  margin-top: 0;
-  margin-bottom: 0; }
+.hi__txtEnlace {
+  color: #009688;
+  border-bottom: solid 2px #009688;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .hi__txtEnlace:hover {
+    color: white; }
+
+.hi__image {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 0 30px 0; }
 
 /*------- ROCK ------- */
 .rock {
-  background: url(../images/bg-about-solrac.jpg) center top no-repeat;
-  background-size: cover;
+  background-color: #455A64;
   text-align: center;
-  padding: 50px 0; }
+  padding: 50px 0 90px 0; }
 
 .rock__txt {
   color: #CFD8DC;
-  letter-spacing: 0.3px; }
+  letter-spacing: 0.3px;
+  font-size: 1.2em; }
 
 /*------- GREEN FOOTER ------- */
 .green {
@@ -774,6 +878,30 @@ header {
   background: url(../images/bg-video-losperros.jpg) center top no-repeat; }
 
 /********************** WORKS ********************* */
+/*------- HI ------- */
+.description {
+  background-color: white;
+  padding: 50px 0;
+  text-align: center; }
+
+.description__title {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 1.4375em;
+  letter-spacing: 0.75px; }
+
+.description__txt {
+  margin-bottom: 50px;
+  margin-top: 0;
+  letter-spacing: 0.3px;
+  font-size: 1.125em; }
+
+.description__roleYear {
+  color: #B6B6B6;
+  margin-top: 0;
+  margin-bottom: 0; }
+
 /*------- LOYAL ------- */
 .iphone {
   background-color: #CFD8DC;
@@ -795,18 +923,26 @@ header {
   text-align: center; }
 
 .contact__container {
-  height: auto !important;
-  margin-top: 120px; }
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -90.5px;
+  margin-left: -160px; }
 
 .contact__title {
   color: white;
   font-size: 1.5em;
   font-weight: 400;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  margin: 0 auto; }
 
 .contact__txt {
   color: white;
-  letter-spacing: 0.3px; }
+  letter-spacing: 0.3px;
+  margin-bottom: 40px;
+  width: 320px;
+  margin: 10px auto 30px auto; }
 
 .contact__iconContainer {
   position: absolute !important;
@@ -814,6 +950,15 @@ header {
   height: auto !important;
   margin-left: -61.5px;
   left: 50%; }
+
+.contact__container .contact__link {
+  display: block;
+  font-weight: 500;
+  font-size: 1.25em;
+  text-decoration: none !important;
+  letter-spacing: 0.5px; }
+  .contact__container .contact__link:first-of-type {
+    margin-bottom: 7px; }
 
 body {
   overflow-x: hidden; }

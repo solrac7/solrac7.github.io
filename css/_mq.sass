@@ -2,18 +2,23 @@
 
 @media (min-width: 768px)
 
-	#home .hero .hero__txtContainer
-		margin-top: -65.5px
-		margin-left: -243.1485px
+	#home 
+		.hero 
+			.hero__txtContainer
+				margin-top: -65.5px
+				margin-left: -243.1485px
 
-	.hero__txtContainer .hero__titleHome
-		font-size: 4.375em
+	.hero__txtContainer 
+		.hero__titleHome
+			font-size: 4.375em
 
-	.hero__txtContainer .hero__subtitle
-		margin-left: 0
-		margin-top: -17px
-		font-size: 1.25em
-		letter-spacing: 5.27px
+	.hero__txtContainer 
+		.hero__subtitle
+			margin-left: 0
+			margin-top: -17px
+			font-size: 1.25em
+			letter-spacing: 5.27px
+
 
 	.little__txt
 		padding: 0 20%
@@ -75,42 +80,47 @@
 					a
 						color: #607D8B
 						text-transform: uppercase
-						font-size: 1.0625em 
+						font-size: 1em 
 						font-weight: 500 
 						margin-left: 67px
 						&:hover
 							color: white 
 
-	.workMenu
-		.workMenu__container
-			margin-top: -205px
-			margin-left: -375px
-			width: 750px
-			left: 50%
-			.workMenu__enlace	
-				.workMenu__imageCont
-					height: 170px
-					width: 100%
-				p
-					margin: 10px 0 0 
-					font-size: 1.1em
-					font-weight: 500
-					text-transform: uppercase
+	.row
+		.workMenu
+			background: rgba(28,54,66,.97)
+			left: 0
+			right: 0
+			bottom: 0
+			top: 0
+			margin: 0
+			padding: 0
+			position: fixed
+			z-index: 999
+			display: none
+			+transition(none)
+			.workMenu__container
+				margin-top: -205px
+				margin-left: -375px
+				width: 750px
+				left: 50%
+				.workMenu__enlace	
+					.workMenu__imageCont
+						height: 170px
+						width: 100%
+					p
+						margin: 10px 0 0 
+						font-size: 1.1em
+						font-weight: 500
+						text-transform: uppercase
 
 
 	.hero 
-		.hero__title, .contact__title
-			width: 70%
-			margin: -48px auto 0 auto
-			font-size: 1.7em
+		.about__title, .contact__title
+			font-size: 2em
 			font-weight: 400
 
 	.hero 
-		.contact__title
-			width: 70%
-			margin: 0 auto 
-			font-size: 1.7em
-			font-weight: 400
 		.contact__txt
 			font-size: 1.25em
 
@@ -120,13 +130,54 @@
 	
 	/*------- WORK BCI------- */
 	
-	.col-xs-12 
-		.hi__txt
-			font-size: 1.25em
-			padding: 0 7%
 
 	.icon-arrow-left, .icon-arrow-right
 		display: block !important
+
+
+	/*------- ABOUT------- */
+
+	.col-xs-12
+		.rock__txt
+			font-size: 1.5em
+			margin: 0
+
+	.col-xs-12 
+		.hi__txt
+			font-size: 1.25em
+			padding: 0
+			.hi__txtEnlace
+				color: white
+				&:hover
+					color: #009688
+
+	body
+		.hi
+			background-image: url(../images/bg-about-hola.jpg)
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: 78% top
+			text-align: left
+			height: 540px
+			
+			.hi__title
+				color: white
+				text-shadow: 1px 1px 70px rgba(0,0,0,.3)
+				letter-spacing: 0
+
+			.hi__txt
+				color: white
+				font-weight: 400 
+				font-size: 1.17em
+				text-shadow: 1px 1px 70px rgba(0,0,0,.3)
+				line-height: 27px
+			
+			.hi__image
+				display: none
+
+	.icon-linkedin
+		&:before
+			color: white
 
 
 @media (min-width: 992px)
@@ -136,15 +187,31 @@
 			height: 317px	
 			p
 				font-size: 1.875em 
+	
+	.row
+		.workMenu
+			.workMenu__container
+				margin-top: -55.5px
+				margin-left: -485px
+				width: 970px
+				.workMenu__enlace	
+					.workMenu__imageCont
+						height: 106px
 
-	.workMenu
-		.workMenu__container
-			margin-top: -55.5px
-			margin-left: -485px
-			width: 970px
-			.workMenu__enlace	
-				.workMenu__imageCont
-					height: 106px
+	.skills__icons
+		[class^="icon-"], [class*="icon-"]
+			font-size: 3.7em
+
+	body
+		.hi
+			background-position: 70% top
+
+			.hi__txt
+				font-size: 1.3em
+
+	.col-xs-12
+		.little__txt
+			font-size: 1.68em
 
 
 @media (min-width: 1200px)
@@ -154,9 +221,7 @@
 			background-color: rgba(28,54,66,.3)
 			&:hover
 				background-color: rgba(28,54,66,1)
-				-webkit-box-shadow: 0px 3px 30px 0px rgba(0,0,0,.7)
-				-moz-box-shadow: 0px 3px 30px 0px rgba(0,0,0,.7)
-				box-shadow: 0px 3px 30px 0px rgba(0,0,0,.7)
+				+box-shadow(0px 3px 30px 0px rgba(0,0,0,.7))
 
 	/*------- Work Home ------- */
 	.work:before, .row .work p
@@ -184,21 +249,29 @@
 					span
 						margin: -3px 0 0 -10px
 
+	.row
+		.workMenu
+			.workMenu__container
+				margin-top: -66px
+				margin-left: -585px
+				width: 1170px
+				.workMenu__enlace	
+					.workMenu__imageCont
+						height: 131px
 
-	.workMenu
-		.workMenu__container
-			margin-top: -66px
-			margin-left: -585px
-			width: 1170px
-			.workMenu__enlace	
-				.workMenu__imageCont
-					height: 131px
+	/*------- ICONS ABOUT------- */
+	.skills__icons
+		[class^="icon-"], [class*=" icon-"]
+			font-size: 4.05em
 
-	/*------- WORK BCI------- */
-	
-	.col-xs-12 
-		.hi__txt
-			font-size: 1.25em
-			padding: 0 20%
+	body
+		.hi
+			background-position: center top
 
+	nav
+		.header__menu
+			ul 
+				li
+					a
+						font-size: 1.0625em
  

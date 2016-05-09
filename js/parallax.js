@@ -1,5 +1,4 @@
 
-
 ;(function ( $, window, document, undefined ) {
 
   // Polyfill for requestAnimationFrame
