@@ -3,17 +3,21 @@
 */
 
 // var $ = require('jquery');
+// var Tuty = require('src/js/alert.js');
+// var parallax = require('src/js/parallax.js');
+// var slick = require('./slick.min.js');
+// var retina = require('./retina.min.js');
+var lazy = require('jquery-lazyload');
 
 
 $(function(){
-
 	// PARALLAX
-	$('.home.parallax-window').parallax({imageSrc: '../portafolio/images/bg-home.jpg'});
-	$('.about.parallax-window').parallax({imageSrc: '../portafolio/images/bg-about.jpg'});
-	$('.loyal.parallax-window').parallax({imageSrc: '../portafolio/images/bg-hero-loyal.jpg'});
-	$('.bci.parallax-window').parallax({imageSrc: '../portafolio/images/bg-hero-bci.jpg'});
-	$('.shapes.parallax-window').parallax({imageSrc: '../portafolio/images/bg-hero-ilustraciones.jpg'});
-	$('.contact.parallax-window').parallax({imageSrc: '../portafolio/images/bg-contact.jpg'});
+	$('.home.parallax-window').parallax({imageSrc: '../images/bg-home.jpg'});
+	$('.about.parallax-window').parallax({imageSrc: '../images/bg-about.jpg'});
+	$('.loyal.parallax-window').parallax({imageSrc: '../images/bg-hero-loyal.jpg'});
+	$('.bci.parallax-window').parallax({imageSrc: '../images/bg-hero-bci.jpg'});
+	$('.shapes.parallax-window').parallax({imageSrc: '../images/bg-hero-ilustraciones.jpg'});
+	$('.contact.parallax-window').parallax({imageSrc: '../images/bg-contact.jpg'});
 
 
   // HEADER OCULTAR/MOSTRAR SEGUN SCROLL
@@ -43,9 +47,9 @@ $(function(){
   // MENU BOTONERA
   var botonera =
   	'<ul class="header__menuLista">' +
-  	  '<li class="about"><a href="about.html">Acerca</a></li>' +
+  	  '<li class="about"><a href="acerca.html">Acerca</a></li>' +
   	  '<li class="workcito"><a href="/#works">Trabajos</a></li>' +
-  	  '<li class="contact"><a href="contact.html">Contacto</a></li>' +
+  	  '<li class="contact"><a href="contacto.html">Contacto</a></li>' +
   	'</ul>' +
     '<div class="workMenu">' +
       '<div class="container">' +
@@ -131,7 +135,7 @@ $(function(){
 
       // CLICK HAMBURGER MENU
       $hamburgerMenu.click(function(){
-        $header
+        $header__menu
           .toggleClass("bg");
         
         $(this)
@@ -262,7 +266,7 @@ $(function(){
       fade: true,
       cssEase: 'linear',
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 7000
     });
   }
   
@@ -272,5 +276,5 @@ $(window).load(function() {
   $('.preloader').fadeOut('slow');
   setTimeout(function(){ 
     $(".logo__container").addClass("upDown");
-   }, 500); 
+   }, 500);
 })

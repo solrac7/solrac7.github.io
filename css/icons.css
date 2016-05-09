@@ -78,21 +78,21 @@
 
 [dir='rtl'] .icon-arrow-left
 {
-    right: 30px;
+    right: -50px;
     left: auto;
 }
 .icon-arrow-left{
-    left: 30px;
+    left: -50px;
 }
 
 .icon-arrow-right
 {
-    right: 30px;
+    right: -50px;
 }
 [dir='rtl'] .icon-arrow-right
 {
     right: auto;
-    left: 30px;
+    left: -50px;
 }
 
 .icon-arrow-left, .icon-arrow-right{

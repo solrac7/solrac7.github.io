@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@
         <div class="row"> 
           <div class="col-xs-3">
             <span class="icon-arrow-back"></span>
-            <a href="/portafolio" class="logo__container">
+            <a href="/" class="logo__container">
               <svg version="1.1" id="logoSolrac" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="57px" height="56px" viewBox="0 0 57.281 55.875" enable-background="new 0 0 57.281 55.875" xml:space="preserve">
                 <path fill="none" d="M29.738-32.552"/>
                 <path fill="#FFFFFF" d="M27.155,26.513c0-0.883-0.721-1.597-1.604-1.596c-0.883,0-1.597,0.714-1.596,1.597
@@ -67,14 +67,14 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12"> 
-            <img src="images/shapes/delantal_infantil.jpg" alt="delantal" class="img-resp">
-            <img src="images/shapes/estrellits.jpg" alt="estrellita" class="img-resp">
-            <img src="images/shapes/telefono.jpg" alt="teléfono" class="img-resp">
-            <img src="images/shapes/triangulo-eye.png" alt="Eye" class="img-resp">
-            <img src="images/shapes/medcenter-logo.png" alt="MedCenter" class="img-resp">
-            <img src="images/shapes/solrac.gif" alt="solrac" class="img-resp">
-            <img src="images/shapes/losperros_logo.png" alt="Los perros" class="img-resp">
-            <img src="images/shapes/collar.jpg" alt="Star" class="img-resp">
+            <div><img data-original="images/shapes/delantal_infantil.jpg" alt="delantal" class="lazy img-resp"></div>
+            <div><img data-original="images/shapes/estrellits.jpg" alt="estrellita" class="lazy img-resp"></div>
+            <div><img data-original="images/shapes/telefono.jpg" alt="teléfono" class="lazy img-resp"></div>
+            <div><img data-original="images/shapes/triangulo-eye.png" alt="Eye" class="lazy img-resp"></div>
+            <div><img data-original="images/shapes/medcenter-logo.png" alt="MedCenter" class="lazy img-resp"></div>
+            <div><img data-original="images/shapes/solrac.png" alt="solrac" class="lazy img-resp"></div>
+            <div><img data-original="images/shapes/losperros_logo.png" alt="Los perros" class="lazy img-resp"></div>
+            <div><img data-original="images/shapes/collar.png" alt="Star" class="lazy img-resp"></div>
           </div>
         </div>
       </div>  
@@ -89,7 +89,7 @@
             <a href="javascript:;" class="green__btn moreWorks">más trabajos</a>
           </div>
           <div class="col-sm-6 al">
-            <a href="contact.html" class="green__btn">contáctame</a>
+            <a href="contacto.html" class="green__btn">contáctame</a>
           </div>
         </div>
       </div>  
@@ -97,7 +97,14 @@
     
 
     <script src="js/jquery.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/bundle.js"></script>
+    <script>
+      $(function() {
+        $("img.lazy").lazyload({
+            effect : "fadeIn"
+        });
+      });
+    </script>
   </body>
 </html>
