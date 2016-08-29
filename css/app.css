@@ -112,19 +112,20 @@
     margin-bottom: 15px;
     float: left; }
 
-  .work__loyal, .work__facilads {
+  .work__loyal, .work__facilads, .work__shots {
     border-right: solid 7.5px white;
     border-left: solid 15px white; }
 
-  .work__bci, .work__shapes {
+  .work__bci, .work__heidelberg, .work__shapes {
     border-left: solid 7.5px white;
     border-right: solid 15px white; }
 
-  .work__shots {
-    border-left: solid 15px white;
-    border-right: solid 15px white; }
-
-  .workMenu__imageCont.work__shots, .workMenu__imageCont.work__bci, .workMenu__imageCont.work__shapes, .workMenu__imageCont.work__facilads, .workMenu__imageCont.work__loyal {
+  .workMenu__imageCont.work__shots,
+  .workMenu__imageCont.work__bci,
+  .workMenu__imageCont.work__shapes,
+  .workMenu__imageCont.work__facilads,
+  .workMenu__imageCont.work__loyal,
+  .workMenu__imageCont.work__heidelberg {
     border-left: solid 3px #CFD8DC;
     border-right: solid 3px #CFD8DC; }
 
@@ -676,6 +677,7 @@ header {
 
 /*------- Work ------- */
 .work {
+  display: block;
   height: 180px;
   background-size: cover !important;
   position: relative;
@@ -720,6 +722,9 @@ header {
 
 .work__facilads {
   background: url(../images/work-facilads-home.jpg) center top no-repeat; }
+
+.work__heidelberg {
+  background: url(../images/work-heidelberg-home.jpg) center top no-repeat; }
 
 .work__shots {
   background: url(../images/work-shots-home.jpg) center top no-repeat; }
