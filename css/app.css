@@ -216,7 +216,7 @@
     .col-xs-12 .hi__txt .hi__txtEnlace {
       color: white; }
       .col-xs-12 .hi__txt .hi__txtEnlace:hover {
-        color: #009688; }
+        color: #00ffe7; }
 
   body .hi {
     background-image: url(../images/bg-about-hola.jpg);
@@ -571,7 +571,8 @@ header {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  backface-visibility: hidden; }
 
 /****** animaciones ***** */
 .upDown {

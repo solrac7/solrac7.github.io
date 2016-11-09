@@ -108,7 +108,7 @@
     border: none;
     outline: none;
     background: transparent;
-    z-index: 999999;
+    z-index: 999;
     display: none !important;
 }
 
