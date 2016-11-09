@@ -323,7 +323,7 @@ $(function(){
             '</div>' +
       
             '<div class="col-xs-6 col-md-3">' +
-              '<a href="shapes.html" class="workMenu__enlace">' +
+              '<a href="http://www.heidelberghaus.cl" target="_heidelberg" class="workMenu__enlace">' +
                 '<div class="workMenu__imageCont work__heidelberg"></div>' +
                 '<p>Heidelberg</p>' +
               '</a>' +
