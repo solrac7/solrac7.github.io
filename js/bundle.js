@@ -261,7 +261,7 @@ $(function(){
 	$('.about.parallax-window').parallax({imageSrc: '../images/bg-about.jpg'});
 	$('.loyal.parallax-window').parallax({imageSrc: '../images/bg-hero-loyal.jpg'});
 	$('.bci.parallax-window').parallax({imageSrc: '../images/bg-hero-bci.jpg'});
-	$('.shapes.parallax-window').parallax({imageSrc: '../images/bg-hero-ilustraciones.jpg'});
+	$('.one.parallax-window').parallax({imageSrc: '../images/bg-one.jpg'});
 	$('.contact.parallax-window').parallax({imageSrc: '../images/bg-contact.jpg'});
 
 
@@ -316,16 +316,16 @@ $(function(){
             '</div>' +
       
             '<div class="col-xs-6 col-md-3">' +
-              '<a href="http://www.facilads.cl" target="_facil" class="workMenu__enlace">' +
+              '<a href="https://www.figma.com/proto/ZXYtoTMMJBQTfd2AFWxyIn/Feed?node-id=631%3A4297&scaling=scale-down-width" target="_myad" class="workMenu__enlace">' +
                 '<div class="workMenu__imageCont work__facilads"></div>' +
-                '<p>Facilads</p>' +
+                '<p>MyAD</p>' +
               '</a>' +
             '</div>' +
       
             '<div class="col-xs-6 col-md-3">' +
-              '<a href="http://www.heidelberghaus.cl" target="_heidelberg" class="workMenu__enlace">' +
+              '<a href="one.html" target="_one" class="workMenu__enlace">' +
                 '<div class="workMenu__imageCont work__heidelberg"></div>' +
-                '<p>Heidelberg</p>' +
+                '<p>ONE Newsletter</p>' +
               '</a>' +
             '</div>' +
           
