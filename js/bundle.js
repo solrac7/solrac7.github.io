@@ -260,7 +260,7 @@ $(function(){
 	$('.home.parallax-window').parallax({imageSrc: '../images/bg-home.jpg'});
 	$('.about.parallax-window').parallax({imageSrc: '../images/bg-about.jpg'});
 	$('.loyal.parallax-window').parallax({imageSrc: '../images/bg-hero-loyal.jpg'});
-	$('.bci.parallax-window').parallax({imageSrc: '../images/bg-hero-bci.jpg'});
+  $('.bci.parallax-window').parallax({imageSrc: '../images/bg-hero-bci.jpg'});
   $('.shapes.parallax-window').parallax({imageSrc: '../images/bg-hero-ilustraciones.jpg'});
   $('.one.parallax-window').parallax({imageSrc: '../images/bg-one.jpg'});
 	$('.contact.parallax-window').parallax({imageSrc: '../images/bg-contact.jpg'});
